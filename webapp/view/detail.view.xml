@@ -1,0 +1,103 @@
+<mvc:View controllerName="acando.fzj.FZJ_GastSelfService_Mock.controller.detail" displayBlock="true" xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:u="sap.ui.unified">
+	<App >
+		<pages>
+			<Page id="page" showHeader="true">
+				<customHeader>
+					<Bar>
+						<contentMiddle>
+							<Text text="Gast Self Service"/>
+						</contentMiddle>
+					</Bar>
+				</customHeader>
+				<content>
+					<Panel expandable="false" expanded="true">
+						<content>
+							<f:SimpleForm coloumnsL="2" editable="true" layout="ResponsiveGridLayout">
+								<core:Title text="Bitte vervollständigen Sie Ihren Antrag"/>
+								<Label text="Ausstellungsart"/>
+								<Text text="Erstausstellung"/>
+								<Label text="Vorname"/>
+								<Input showValueHelp="true" value="Mehmet"/>
+								<Label text="Nachname"/>
+								<Input showValueHelp="true" value="Ünal"/>
+								<Label text="Geb. Datum"/>
+								<DatePicker value="08.11.1979"/>
+								<core:Title text=""/>
+								<Label text="Geschlecht"/>
+								<Select>
+									<items>
+										<core:Item text="männlich"/>
+										<core:Item text="weiblich"/>
+									</items>
+								</Select>
+								<Label text="Staat"/>
+								<Input showValueHelp="true" value="Deutschland"/>
+								<Label text="Nationalität"/>
+								<Input showValueHelp="true" value="deutsch"/>
+								<Label text="Organisationsheit"/>
+								<Input showValueHelp="true" editable="false" value="Organisationseinheit 7"/>
+							</f:SimpleForm>
+						</content>
+					</Panel>
+					<!--		<Panel expandable="false" expanded="false" class="sapMPanelHeader sapUiSmallContentPadding processPanel" headerText="Antragsstatus">
+							<content>
+								<core:Fragment fragmentName="acando.fzj.FZJ_GastSelfService_Mock.view.ProcessPanel" type="XML"/>
+							</content>
+						</Panel>-->
+					<IconTabBar class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter text="Allgemeines Infos" icon="sap-icon://customer-and-contacts">
+								<Text text="Info content goes here ..."/>
+							</IconTabFilter>
+							<IconTabFilter text="Zeiträume" icon="sap-icon://time-overtime">
+								<f:SimpleForm coloumnsL="2" editable="true" layout="ResponsiveGridLayout">
+									<core:Title text=""/>
+									<Label text="Startdatum" labelFor="DTP1"/>
+									<DateTimePicker id="DTP1" placeholder="Bitte Datum eingeben" class="sapUiSmallMarginBottom" value="01.07.2019, 08:00:00" editable="true"/>
+									<core:Title text=""/>
+									<Label text="Enddatum " labelFor="DTP2"/>
+									<DateTimePicker id="DTP2" placeholder="Bitte Datum eingeben" class="sapUiSmallMarginBottom" value="01.07.2020, 17:00:00" editable="true"/>
+								</f:SimpleForm>
+							</IconTabFilter>
+							<IconTabFilter text="Anlagen" icon="sap-icon://attachment">
+								<l:VerticalLayout>
+									<u:FileUploader name="myFileUpload" uploadUrl="upload/" tooltip="Upload your file to the local server" uploadComplete="handleUploadComplete"
+										change="handleValueChange" typeMissmatch="handleTypeMissmatch" style="Emphasized" fileType="txt,jpg"
+										placeholder="Choose a file for Upload...">
+										<u:parameters>
+											<u:FileUploaderParameter name="param1" value="Foo"/>
+											<u:FileUploaderParameter name="param2" value="bar"/>
+										</u:parameters>
+										<u:headerParameters>
+											<u:FileUploaderParameter name="headerParam1" value="Foo"/>
+											<u:FileUploaderParameter name="headerParam2" value="bar"/>
+										</u:headerParameters>
+									</u:FileUploader>
+									<Button text="Upload File" press="handleUploadPress"/>
+								</l:VerticalLayout>
+							</IconTabFilter>
+							<IconTabFilter text="Notizen" icon="sap-icon://notes">
+								<Text text="Notes go here ..."/>
+							</IconTabFilter>
+							<IconTabFilter text="Verknüpfungen" icon="sap-icon://process">
+								<Text text="People content goes here ..."/>
+							</IconTabFilter>
+							<IconTabFilter text="Vergütung" icon="sap-icon://batch-payments">
+								<Text text="Notes go here ..."/>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+				<footer>
+					<Bar>
+						<contentRight>
+							<Button icon="sap-icon://forward" type="Accept" text="abschließen und weiterleiten" press="onComplete"/>
+							<Button icon="sap-icon://save" type="Emphasized" text="speichern" press="onSeeeef"/>
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

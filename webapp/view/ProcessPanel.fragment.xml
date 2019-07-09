@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<FlexBox id="processFlow" alignItems="Center" justifyContent="Start" items="{status>/processFlow}" class="processFlow">
+		<items>
+			<FlexBox alignItems="Center" direction="Column" class="sapMFlexItemStatus sapUiSmallMargin">
+				<HBox>
+					<core:Icon src="sap-icon://arrow-right" size="1.5rem" class="sapUiSmallMargin" color="{status>iconColor}"/>
+					<core:Icon src="{status>icon}" size="2rem" class="sapUiMediumMargin" color="{status>iconColor}"/>
+				</HBox>
+				<Text text="{status>Description}"/>
+			</FlexBox>
+		</items>
+	</FlexBox>
+</core:FragmentDefinition>

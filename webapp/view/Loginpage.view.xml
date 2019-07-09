@@ -1,0 +1,33 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout" controllerName="acando.fzj.FZJ_GastSelfService_Mock.controller.Loginpage" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="app">
+		<pages>
+			<Page title="Gast Self Service">
+				<content>
+					<VBox justifyContent="Center" alignItems="Center">
+						<items>
+							<HBox>
+								<Image src="resources/usa.jpg" width="100px" class="sapUiMediumMarginBottom" mode="Image"/>
+								<RadioButton groupName="A" text="english" class="sapUiSmallMarginEnd"/>
+							</HBox>
+							<HBox>
+								<Image src="resources/ger.jpg" width="100px" class="sapUiMediumMarginBottom" mode="Image"/>
+								<RadioButton groupName="A" text="deutsch" class="sapUiSmallMarginEnd"/>
+							</HBox>
+							<Image src="resources/logo.jpg" width="100%" class="sapUiMediumMarginBottom"/>
+							<Input placeholder="Temp. User ID" required="true" id="useridInput" liveChange="onLiveChangeUser"/>
+							<Input placeholder="Password" type="Password" id="passwordInput" required="true" liveChange="onLiveChangePassword"/>
+						</items>
+					</VBox>
+				</content>
+				<footer >
+					<Bar>
+						<contentRight>
+							<Button width="12rem" text="Login" id="acceptButton" type="Accept" press="onLogin" enabled="false" icon="sap-icon://visits"/>
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
