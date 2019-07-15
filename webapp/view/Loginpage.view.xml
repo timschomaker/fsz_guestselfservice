@@ -12,7 +12,7 @@
 							</HBox>
 							<HBox>
 								<Image src="resources/ger.jpg" width="100px" class="sapUiMediumMarginBottom" mode="Image"/>
-								<RadioButton groupName="A" text="deutsch" class="sapUiSmallMarginEnd"/>
+								<RadioButton groupName="A" text="deutsch" class="sapUiSmallMarginEnd" selected="true"/>
 							</HBox>
 							<Image src="resources/logo.jpg" width="100%" class="sapUiMediumMarginBottom"/>
 							<Input placeholder="Temp. User ID" required="true" id="useridInput" liveChange="onLiveChangeUser"/>

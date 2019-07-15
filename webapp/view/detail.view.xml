@@ -8,6 +8,9 @@
 						<contentMiddle>
 							<Text text="Gast Self Service"/>
 						</contentMiddle>
+						<contentRight>
+							<Button id="Logout" icon="sap-icon://log" text="Logout" press="onLogout"/>
+						</contentRight>
 					</Bar>
 				</customHeader>
 				<content>
@@ -92,7 +95,7 @@
 				<footer>
 					<Bar>
 						<contentRight>
-							<Button icon="sap-icon://forward" type="Accept" text="abschließen und weiterleiten" press="onComplete"/>
+							<Button id="Forward" icon="sap-icon://forward" type="Accept" text="abschließen und weiterleiten" press="onComplete"/>
 							<Button icon="sap-icon://save" type="Emphasized" text="speichern" press="onSeeeef"/>
 						</contentRight>
 					</Bar>

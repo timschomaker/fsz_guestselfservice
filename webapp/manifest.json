@@ -59,9 +59,11 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
@@ -73,19 +75,22 @@
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [{
-				"name": "Targetdetail",
-				"pattern": "Targetdetail",
-				"target": [
-					"Targetdetail"
-				]
-			}, {
-				"name": "Loginpage",
-				"pattern": "",
-				"target": [
-					"Loginpage"
-				]
-			}],
+			"routes": [
+				{
+					"name": "Targetdetail",
+					"pattern": "Targetdetail",
+					"target": [
+						"Targetdetail"
+					]
+				},
+				{
+					"name": "Loginpage",
+					"pattern": "",
+					"target": [
+						"Loginpage"
+					]
+				}
+			],
 			"targets": {
 				"Targetdetail": {
 					"viewType": "XML",
@@ -99,5 +104,9 @@
 				}
 			}
 		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
 	}
 }
